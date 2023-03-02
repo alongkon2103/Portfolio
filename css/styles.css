@@ -11324,6 +11324,8 @@ body {
 .card:hover{
   transform: scale(1.05);
   z-index: 100;
+  animation: bgColor 5s infinite linear;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -11383,4 +11385,39 @@ body {
 
 .social a:nth-child(4) i{
   color: #4ECCE8;
+}
+
+@keyframes bgColor {
+  12.5% {
+    border:1px solid #FF0000;
+  }
+  25% {
+    border:1px solid #FFA500;
+  }
+  37.5% {
+    border:1px solid #FFFF00;
+  }
+  50% {
+    border:1px solid #7FFF00;
+  }
+  62.5% {
+    border:1px solid #00FFFF;
+  }
+  75% {
+    border:1px solid #0000FF;
+  }
+  87.5% {
+    border:1px solid #9932CC;
+  }
+  100% {
+    border:1px solid #FF1493;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about {
+  margin-top: 500px;
+  }
+  .box{
+    margin-top: 50%;
+  }
 }
