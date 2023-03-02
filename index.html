@@ -72,24 +72,40 @@
        <table align="center">
         <tr>
             <td>
-                <div class="card-group" style="width: 80%;margin-left: 10%;">
-                    <div class="card">
-                      <img src="/img/discord.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Discord Bot</h5>
-                        <p class="card-text">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card-group" style="width: 80%;margin-left: 10%;">
+                        <div class="card">
+                          <img src="/img/discord.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Discord Bot</h5>
+                            <p class="card-text">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
+                          </div>
+                        </a>
+                        </div>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <div class="card">
+                          <img src="/img/web.png" class="card-img-top">
+                          <div class="card-body">
+                            <h5 style="margin-top: 1rem;" class="card-title">Website It-Uni</h5>
+                            <p class="card-text">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
+        
+                        </div>
+                    </a>
                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="/img/web.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 style="margin-top: 1rem;" class="card-title">Website It-Uni</h5>
-                        <p class="card-text">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
-    
-                    </div>
-                  
-                  </div>
-            </div>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <div class="card">
+                          <img src="/img/shop.png" class="card-img-top">
+                          <div class="card-body">
+                            <h5 style="margin-top: 1rem;" class="card-title">ระบบตู้กด</h5>
+                            <p class="card-text">เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js</p>
+        
+                        </div>
+                    </a>
+                      </div>
+                      
+                </div>
+          
+              
             </td>
         </tr>
        </table>
@@ -116,6 +132,59 @@
               backSpeed:100,
             });
           </script>
-        
+    
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog" >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Discord Bot</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/img/discord.png" class="card-img-top" alt="...">
+                    <h5 style="margin-top: 5%;">Chunibyo-Cat</h5>
+                    บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
+            <div class="modal-dialog" >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">It-Uni</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/img/web.png" class="card-img-top" alt="...">
+                    <h5 style="margin-top: 5%;">IT-Uni</h5>
+                   เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา
+                  <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary">เยี่ยมชมเว็บไซต์</button></a> 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
+            <div class="modal-dialog" >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">It-Uni</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/img/shop.png" class="card-img-top" alt="...">
+                    <h5 style="margin-top: 5%;">ระบบตู้กด</h5>
+                  เว็บนี้ทำเพื่อลองใช้ Node.js เพิ่อสร้าง QR code โดยเว็บนี้จะทำเป็นคล้ายๆตู้กดสินค้า เมื่อ กดซื้อ มันจะสร้าง QR Code promtpay ให้เราสแกนจ่ายเงิน โดยสามารถสแกนจ่ายได้จริง
+                </div>
+                
+              </div>
+            </div>
+          </div>
     </body>
 </html>
