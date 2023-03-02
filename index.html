@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="/css/styles.scss">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Alongkon</title>
+        <title>My resume</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body  id="home">
+    <body  id="body">
         <div class="social">
             <a href="https://www.facebook.com/alongkon29/">Facebook <i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/@npsa2053">Youtube <i class="fab fa-youtube"></i></a>
@@ -25,9 +27,13 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#body">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                        <li class="nav-item">   <a class="nav-link"  id="mode-toggle">
+                          <i class="fa fa-sun"></i> Light Mode
+                        </a> </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -45,7 +51,7 @@
         </section>
 
         <div class="about" id="about">
-            <div class="card mb-3 text-black " style="max-width: 1200px;border: 1px solid white;width: 80%;">
+            <div class="card mb-3 text-black" style="max-width: 1200px;border: 1px solid white;width: 80%;">
                 <div class="row g-0">
                  
                   <div class="col-md-8">
@@ -124,7 +130,7 @@
         <script src="js/scripts.js"></script>
         <script>
             var typed = new Typed('#typed', {
-              strings:['Alongkon Chanthiang','17','Poon','Web Developer'],
+              strings:['Alongkon Chanthiang','Web Developer'],
               stringsElement: '#typed-strings',
               smartBackspace: true,
               loop:true,
@@ -136,7 +142,7 @@
           
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-            <div class="modal-dialog" >
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Discord Bot</h1>
@@ -162,10 +168,8 @@
                 <div class="modal-body">
                     <img src="/img/web.png" class="card-img-top" alt="...">
                     <h5 style="margin-top: 5%;">IT-Uni</h5>
-                   เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา ถ้าเข้าในโทรศัพท์หรืออุปกรณ์หน้าจอขนาดเล็ก เว็บจะมั่วๆหน่อยนะ เพราะตอนนั้นยังไม่สารมารถทำให้มัน Respondsive ได้<br>
-                 <div class="moodal-footer">
-                     <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary">เยี่ยมชมเว็บไซต์</button></a> 
-                    </div>
+                   เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา
+                  <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary">เยี่ยมชมเว็บไซต์</button></a> 
                 </div>
                 
               </div>
@@ -188,5 +192,19 @@
               </div>
             </div>
           </div>
+        
+          <script>
+            const modeToggle = document.querySelector('#mode-toggle');
+    const body = document.querySelector('body');
+    
+    modeToggle.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        modeToggle.innerHTML = '<i class="fa fa-moon"></i> Dark Mode';
+      } else {
+        modeToggle.innerHTML = '<i class="fa fa-sun"></i> Light Mode';
+      }
+    });
+          </script>
     </body>
 </html>

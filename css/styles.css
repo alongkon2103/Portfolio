@@ -11422,3 +11422,32 @@ body {
     margin-top: 50%;
   }
 }
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --background-color: #202020;
+  --text-color: #ffffff;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.card-text{
+  color: var(--text-color);
+}
+p{
+  color: var(--text-color);
+}
+h2,h3,h4,h5,h6{
+  color: var(--text-color);
+}
+.card{
+  background-color: var(--background-color);
+}
+.modal-header,.modal-body,.modal-title{
+  background-color: var(--background-color);
+}
