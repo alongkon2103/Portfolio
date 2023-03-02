@@ -11337,7 +11337,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translate(-265px, 0);
+  transform: translate(-260px, 0);
   z-index: 500;
 }
 
@@ -11358,7 +11358,7 @@ body {
 }
 
 .social a:hover{
-  transform: translate(140px, 0);
+  transform: translate(70px, 0);
 }
 
 .social i{
@@ -11413,6 +11413,7 @@ body {
     border:1px solid #FF1493;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .about {
   margin-top: 500px;
