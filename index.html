@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>My resume</title>
+        <title>Alongkon</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -27,11 +27,12 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#body">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#body" id="menu_home">หน้าหลัก</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" id="menu_about">เกี่ยวกับเรา</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#work" id="menu_work">ผลงาน</a></li>
                         <li class="nav-item">   <a class="nav-link"  id="mode-toggle">
                           <i class="fa fa-sun"></i> Light Mode
+                        <li class="nav-item"><a class="nav-link" onclick="togglelang()" id="btn_language" >Language</a></li>
                         </a> </li>
                         
                     </ul>
@@ -56,10 +57,10 @@
                  
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;display: flex;justify-content: center;">About Me</h5>
-                      <p class="card-text">สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาของวิทยาลัยเทคนัคสัตหีบ อยู่ระดับชั้น ปวช.3 อายุ 18 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ </p><br>
-                      <p>นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ</p>
-                      <h4 style="margin-top: 50px;">Skills</h6>
+                      <h5 class="card-title" style="text-align: center;display: flex;justify-content: center;" id="aboutme">เกี่ยวกับเรา</h5>
+                      <p class="card-text" id="aboutmetext">สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาของวิทยาลัยเทคนัคสัตหีบ อยู่ระดับชั้น ปวช.3 อายุ 18 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ </p><br>
+                      <p id="aboutmetext2">นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ</p>
+                      <h4 style="margin-top: 50px;" id="skill">Skills</h6>
                         <p style="margin-top: 1rem;">-Python &nbsp;&nbsp;-HTML&nbsp;&nbsp; -PHP</p>
                         <p>-CSS &nbsp; &nbsp; &nbsp;&nbsp;-Java Script</p>
                     </div>
@@ -73,7 +74,7 @@
 
         <div class="work" >
             <div  id="work" style="color: white;height: 5rem;">
-                <h1 align="center" style="padding-top: 20px;">My Work</h1>
+                <h1 align="center" style="padding-top: 20px;" id="mywork">ผลงาน</h1>
             </div>
        <table align="center">
         <tr>
@@ -84,7 +85,7 @@
                           <img src="/img/discord.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Discord Bot</h5>
-                            <p class="card-text">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
+                            <p class="card-text" id="discordbot">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
                           </div>
                         </a>
                         </div>
@@ -92,8 +93,8 @@
                         <div class="card">
                           <img src="/img/web.png" class="card-img-top">
                           <div class="card-body">
-                            <h5 style="margin-top: 1rem;" class="card-title">Website It-Uni</h5>
-                            <p class="card-text">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
+                            <h5 class="card-title">Website It-Uni</h5>
+                            <p class="card-text" id="website">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
         
                         </div>
                     </a>
@@ -102,8 +103,8 @@
                         <div class="card">
                           <img src="/img/shop.png" class="card-img-top">
                           <div class="card-body">
-                            <h5 style="margin-top: 1rem;" class="card-title">ระบบตู้กด</h5>
-                            <p class="card-text">เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js</p>
+                            <h5 style="margin-top: 1rem;" class="card-title" id="vending_machine">ระบบตู้กด</h5>
+                            <p class="card-text" id="tugod">เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js ทำเป็นคล้ายๆตู้กดสินค้าที่ต้องสแกนจ่ายเงินก่อน</p>
         
                         </div>
                     </a>
@@ -151,7 +152,7 @@
                 <div class="modal-body">
                     <img src="/img/discord.png" class="card-img-top" alt="...">
                     <h5 style="margin-top: 5%;">Chunibyo-Cat</h5>
-                    บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า
+                   <p id="discordbotdata">บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า</p> 
                 </div>
               </div>
             </div>
@@ -168,8 +169,9 @@
                 <div class="modal-body">
                     <img src="/img/web.png" class="card-img-top" alt="...">
                     <h5 style="margin-top: 5%;">IT-Uni</h5>
-                   เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา
-                  <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary">เยี่ยมชมเว็บไซต์</button></a> 
+                    <p id="webdata"> เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา</p>
+                  
+                  <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary" id="visit">เยี่ยมชมเว็บไซต์</button></a> 
                 </div>
                 
               </div>
@@ -180,13 +182,13 @@
             <div class="modal-dialog" >
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">It-Uni</h1>
+                  <h1 class="modal-title fs-5" id="vending_machine2"></h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="/img/shop.png" class="card-img-top" alt="...">
-                    <h5 style="margin-top: 5%;">ระบบตู้กด</h5>
-                  เว็บนี้ทำเพื่อลองใช้ Node.js เพิ่อสร้าง QR code โดยเว็บนี้จะทำเป็นคล้ายๆตู้กดสินค้า เมื่อ กดซื้อ มันจะสร้าง QR Code promtpay ให้เราสแกนจ่ายเงิน โดยสามารถสแกนจ่ายได้จริง
+                    <h5 style="margin-top: 5%;" id="vending_machine3">ระบบตู้กด</h5>
+                  <p id="vending_machinedata">เว็บนี้ทำเพื่อลองใช้ Node.js เพิ่อสร้าง QR code โดยเว็บนี้จะทำเป็นคล้ายๆตู้กดสินค้า เมื่อ กดซื้อ มันจะสร้าง QR Code promtpay ให้เราสแกนจ่ายเงิน โดยสามารถสแกนจ่ายได้จริง</p> 
                 </div>
                 
               </div>
@@ -205,6 +207,108 @@
         modeToggle.innerHTML = '<i class="fa fa-sun"></i> Light Mode';
       }
     });
+          </script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+          <script>
+
+              var th = {
+                menu_home: 'หน้าแรก',
+                menu_about: 'เกี่ยวกับเรา',
+                btn_language: 'ภาษา : ไทย',
+                menu_work : 'ผลงาน',
+                aboutme : 'เกี่ยวกับเรา',
+                aboutmetext : 'สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักThai-Austrian Technical College อยู่ระดับชั้น ปวช.3 อายุ 18 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ',
+                aboutmetext2: 'นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ',
+                skill : 'ความสามารถ',
+                mywork : 'ผลงาน',
+                discordbotdata : 'บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า',
+                discordbot : 'Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว',
+                website : 'เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT',
+                tugod : 'เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js ทำเป็นคล้ายๆตู้กดสินค้าที่ต้องสแกนจ่ายเงินก่อน',
+                vending_machine: "ตู้กดสินค้า",
+                vending_machine2: "ตู้กดสินค้า",
+                vending_machine3: "ตู้กดสินค้า",
+                vending_machinedata: "เว็บนี้ทำเพื่อลองใช้ Node.js เพิ่อสร้าง QR code โดยเว็บนี้จะทำเป็นคล้ายๆตู้กดสินค้า เมื่อ กดซื้อ มันจะสร้าง QR Code promtpay ให้เราสแกนจ่ายเงิน โดยสามารถสแกนจ่ายได้จริง",
+                webdata : 'เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา',
+                visit : "เยี่ยมชม",
+              }
+
+
+              var en = {
+                menu_home: 'Home',
+                menu_about: 'About',
+                btn_language: 'Language : EN',
+                menu_work : 'Work',
+                aboutme : 'About Me',
+                aboutmetext : "Hello, my name is Alongkorn Chanthiang or Poon. I'm currently a Thai-Austrian Technical College student at the level of Vocational Certificate 3, age 18. I have a passion for On the programming side or developing a lot of websites Maybe not very good now, but will continue to improve.",
+                aboutmetext2 : 'This is my first Portfolio website. I apologize if there is any mistake.',
+                skill: 'Skill',
+                mywork : 'Work',
+                discordbotdata : 'This bot, named Chunibyo-Cat, is a Discord bot built in Python. The bot has a system for text flux, embed, vote poll, covid 19 data view, etc. But now it is not open to online bots. yes because there is no server to open all the time hahaha',
+                discordbot: "This Discord Bot is built in Python language. There are various commands to use. But now it has stopped developing.",
+                website : 'This website is created for a friend as a 3rd year vocational project developed using HTML CSS PHP language. This website is used to view information of various universities that have branches related to IT departments.',
+                tugod : "This site is powered by HTML CSS Bootstrap Node.js.Pretending to be like a vending machine that has to be scanned to pay first",
+                vending_machine: "vending machine",
+                vending_machine2: "vending machine",
+                vending_machine3: "vending machine",
+                vending_machinedata: "This website is made to try using Node.js to create a QR code. This website will act like a vending machine. When you click to buy, it will generate a QR Code promtpay for us to scan to pay. which can actually scan to pay",
+                webdata : 'This website is a 3rd year graduation project. This website is developed with PHP HTML CSS SQL language. It is a website that collects garlands that graduated from IT departments and can continue or have branches related to IT departments. Using PHP Myadmin to store data and use SQL commands to retrieve data and make a search system.',
+                visit : "visit "
+              }
+
+
+
+
+            function renderlang(){
+              if(!localStorage.lang){
+                localStorage.setItem('lang','th')
+
+              }else{
+                $("#menu_home").text(settext("menu_home"));
+                $("#menu_about").text(settext("menu_about"));
+                $("#btn_language").text(settext("btn_language"));
+                $("#menu_work").text(settext("menu_work"));
+                $("#aboutme").text(settext("aboutme"));
+                $("#aboutmetext").text(settext("aboutmetext"));
+                $("#aboutmetext2").text(settext("aboutmetext2"));
+                $("#skill").text(settext("skill"));
+                $("#mywork").text(settext("mywork"));
+                $("#discordbotdata").text(settext("discordbotdata"));
+                $("#discordbot").text(settext("discordbot"));
+                $("#website").text(settext("website"));
+                $("#tugod").text(settext("tugod"));
+                $("#vending_machine").text(settext("vending_machine"));
+                $("#vending_machine2").text(settext("vending_machine2"));
+                $("#vending_machine3").text(settext("vending_machine3"));
+                $("#vending_machinedata").text(settext("vending_machinedata"));
+                $("#webdata").text(settext("webdata"));
+                $("#visit ").text(settext("visit"));
+     
+              }
+                   
+
+            }
+            function settext(key) {
+              if (localStorage.lang == "en") {
+                return en[key];
+              } else {
+                return th[key];
+              }
+            }
+
+            function togglelang() {
+              if (localStorage.lang == "en") localStorage.setItem("lang", "th");
+              else if (localStorage.lang == "th") localStorage.setItem("lang", "en");
+
+              renderlang();
+              return "now language: " + localStorage.lang;
+            }
+
+            renderlang()
+
+
+
+
           </script>
     </body>
 </html>
