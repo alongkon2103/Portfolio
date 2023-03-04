@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
       <link rel="stylesheet" href="/css/styles.scss">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -13,6 +21,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="/img/poon.jpg" />
     </head>
     <body  id="body">
         <div class="social">
@@ -29,11 +38,12 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#body" id="menu_home">หน้าหลัก</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about" id="menu_about">เกี่ยวกับเรา</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#work" id="menu_work">ผลงาน</a></li>
-                        <li class="nav-item">   <a class="nav-link"  id="mode-toggle">
-                          <i class="fa fa-sun"></i> Light Mode
+                        <li class="nav-item"><a class="nav-link" href="#mywork" id="menu_work">ผลงาน</a></li>
+                       
                         <li class="nav-item"><a class="nav-link" onclick="togglelang()" id="btn_language" >Language</a></li>
                         </a> </li>
+                        <li class="nav-item">   <a class="nav-link"  id="mode-toggle">
+                          <i class="fa fa-sun"></i> Light
                         
                     </ul>
                 </div>
@@ -45,14 +55,14 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-6 text-white">
                         <h1 class="mt-5">Hello !!</h1>
-                        <h1> i'm <span id="typed" style="color:aqua";></span> <h1>
+                        <h1> i'm <span id="typed" style="color:yellow";></span> <h1>
                     </div>
                 </div>
             </div>
         </section>
 
         <div class="about" id="about">
-            <div class="card mb-3 text-black" style="max-width: 1200px;border: 1px solid white;width: 80%;">
+            <div class="card mb-3 text-black" style="max-width: 1200px;width: 80%;">
                 <div class="row g-0">
                  
                   <div class="col-md-8">
@@ -73,7 +83,7 @@
         </div>
 
         <div class="work" >
-            <div  id="work" style="color: white;height: 5rem;">
+            <div   style="color: white;height: 5rem;">
                 <h1 align="center" style="padding-top: 20px;" id="mywork">ผลงาน</h1>
             </div>
        <table align="center">
@@ -158,25 +168,24 @@
             </div>
           </div>
 
-
           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
-            <div class="modal-dialog" >
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">It-Uni</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">IT-UNI Bot</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/web.png" class="card-img-top" alt="...">
-                    <h5 style="margin-top: 5%;">IT-Uni</h5>
-                    <p id="webdata"> เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา</p>
-                  
-                  <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary" id="visit">เยี่ยมชมเว็บไซต์</button></a> 
-                </div>
-                
+                    <img src="/img/discord.png" class="card-img-top" alt="...">
+                    <h5 style="margin-top: 5%;">Chunibyo-Cat</h5>
+                   <p id="webdata">บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า</p> 
+               
+                   <a href="https://webtatcproject.000webhostapp.com/" target="_blank"><button style="margin-top: 1rem;" type="button" class="btn btn-primary" id="visit">เยี่ยมชมเว็บไซต์</button></a> 
+                  </div>
               </div>
             </div>
           </div>
+
 
           <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
             <div class="modal-dialog" >
@@ -202,9 +211,9 @@
     modeToggle.addEventListener('click', function() {
       body.classList.toggle('dark-mode');
       if (body.classList.contains('dark-mode')) {
-        modeToggle.innerHTML = '<i class="fa fa-moon"></i> Dark Mode';
+        modeToggle.innerHTML = '<i class="fa fa-moon"></i> Dark';
       } else {
-        modeToggle.innerHTML = '<i class="fa fa-sun"></i> Light Mode';
+        modeToggle.innerHTML = '<i class="fa fa-sun"></i> Light';
       }
     });
           </script>
@@ -310,5 +319,6 @@
 
 
           </script>
+        
     </body>
 </html>

@@ -11287,7 +11287,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: url(/img/bg.jpg) no-repeat center center fixed;
+  background: url(/img/befunky_2023-2-6_15-25-30.jpg) no-repeat center center fixed;
   background-color: white;
   background-size: cover;
 }
@@ -11306,6 +11306,12 @@ body {
   height: 820px;
   align-items: center;
 }
+.work2{
+  margin-top: 8%;
+  width: 100%;
+  height: 820px;
+  align-items: center;
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -11316,7 +11322,9 @@ body {
 }
 
 body { 
-       font-family: 'Open Sans',sans-serif;  
+  font-family: 'Tilt Neon', cursive;
+  font-family: 'Noto Serif Thai', serif;
+  font-family: 'Tilt Neon', cursive;
 }
 .card{
   transition: 0.2s;
@@ -11414,12 +11422,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px),(max-width : 600px) {
   .about {
   margin-top: 500px;
   }
   .box{
     margin-top: 50%;
+  }
+  .work2{
+    margin-top: 100%;
   }
 }
 :root {
@@ -11448,6 +11459,9 @@ h2,h3,h4,h5,h6{
 .card{
   background-color: var(--background-color);
 }
-.modal-header,.modal-body,.modal-title{
+.modal-header,.modal-body,.modal-title,.modal-header,.modal-content{
   background-color: var(--background-color);
+}
+#exampleModalLabel{
+  color: var(--text-color);
 }
