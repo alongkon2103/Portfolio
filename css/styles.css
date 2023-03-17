@@ -11312,19 +11312,15 @@ body {
   height: 820px;
   align-items: center;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('css_fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('css_fonts/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100&family=Tilt+Neon&display=swap');
 
 body { 
   font-family: 'Tilt Neon', cursive;
   font-family: 'Noto Serif Thai', serif;
   font-family: 'Tilt Neon', cursive;
+  font-family: 'Noto Serif Thai', serif;
+  font-family: 'Tilt Neon', cursive;
+
 }
 .card{
   transition: 0.2s;
