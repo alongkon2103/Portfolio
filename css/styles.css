@@ -11294,10 +11294,9 @@ body {
 .about{
   margin-top: 25%;
   width: 100%;
-  height: 820px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+}
+.boxsection{
+  width: 100%;
 }
 
 .work{
@@ -11322,16 +11321,6 @@ body {
   font-family: 'Tilt Neon', cursive;
 
 }
-.card{
-  transition: 0.2s;
-}
-.card:hover{
-  transform: scale(1.05);
-  z-index: 100;
-  animation: bgColor 5s infinite linear;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 
 
 
@@ -11417,7 +11406,9 @@ body {
     border:1px solid #FF1493;
   }
 }
-
+.certificatecon{
+  width: 50%;
+}
 @media only screen and (max-width: 1000px),(max-width : 600px) {
   .about {
   margin-top: 500px;
@@ -11428,8 +11419,15 @@ body {
   .work2{
     margin-top: 100%;
   }
+  .twocontent{
+    margin-top: 10%;
+  }
+  .certificatecon{
+    width: 100%;
+  }
 
 }
+
 :root {
   --background-color: #ffffff;
   --text-color: #000000
@@ -11450,6 +11448,14 @@ body {
 p{
   color: var(--text-color);
 }
+.about{
+  background-color: var(--background-color);
+}
+.boxsection{
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
 h2,h3,h4,h5,h6{
   color: var(--text-color);
 }
@@ -11461,4 +11467,27 @@ h2,h3,h4,h5,h6{
 }
 #exampleModalLabel{
   color: var(--text-color);
+}
+.footers{
+  background-color:#202020;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 16px;
+  row-gap: 30px;
+}
+.item {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.priceimg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.timersm{
+  background-color: #f7f8f9;
+  width: fit-content;
+  padding: 0.7%;
 }

@@ -46,12 +46,12 @@
     </head>
    
 
-        <div class="social">
+        <!-- <div class="social">
             <a href="https://www.facebook.com/alongkon29/">Facebook <i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/@npsa2053">Youtube <i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/__alongkon/">Instagram <i class="fab fa-instagram"></i></a>
             <a href="https://github.com/alongkon2103/">Instagram <i class="fab fa-github"></i></a>
-          </div>
+          </div> -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
             <div class="container px-4 px-lg-5">
@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#body" id="menu_home">หน้าหลัก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" id="menu_about">เกี่ยวกับเรา</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutme" id="menu_about">เกี่ยวกับเรา</a></li>
                         <li class="nav-item"><a class="nav-link" href="#mywork" id="menu_work">ผลงาน</a></li>
                         <li class="nav-item"><a class="nav-link" onclick="togglelang()" id="btn_language" >Language</a></li>
                         <li class="nav-item"><a class="nav-link" id="mode-toggle"><i class="fa fa-sun"></i> Light </a>
@@ -80,83 +80,319 @@
             </div>
         </section>
 
-        <div class="about" id="about" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card mb-3 text-black" style="max-width: 1200px;width: 80%;">
-                <div class="row g-0">
-                 
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;display: flex;justify-content: center;" id="aboutme" data-aos="fade-down">เกี่ยวกับเรา</h5>
-                      <p class="card-text" id="aboutmetext" data-aos="fade-down">สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาของวิทยาลัยเทคนัคสัตหีบ อยู่ระดับชั้น ปวส.1 อายุ 19 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ </p><br>
-                      <p id="aboutmetext2" data-aos="fade-down">นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ</p>
-                      <h4 style="margin-top: 50px;" id="skill" data-aos="fade-down">Skills</h6>
-                        <p style="margin-top: 1rem;" data-aos="fade-down">-Python &nbsp;&nbsp;-HTML&nbsp;&nbsp; -PHP</p>
-                        <p data-aos="fade-down">-CSS &nbsp; &nbsp; &nbsp;&nbsp;-Java Script</p>
+          <section class="about py-5" >
+            <h1 class="p-5"  style="text-align: center;display: flex;justify-content: center;" id="aboutme" data-aos="fade-down">เกี่ยวกับเรา</h1>
+            <div class="col d-flex justify-content-center" id="about" data-aos="fade-right" data-aos-duration="1000">
+              <div class="card text-black border-0" style="max-width: 1200px;width: 80%;">
+
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="/img/my.jpg" class="img-fluid rounded-start w-100 mx-auto d-block" alt="...">
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                    <img src="/img/my.jpg" class="img-fluid rounded-start w-100 mx-auto d-block" alt="...">
-                  </div>
-                </div>
-              </div>
-        </div>
-
-        </script>
-        <div class="work" >
-            <div   style="color: black;height: 5rem;-webkit-text-stroke: 1px white;">
-                <h1 align="center" style="padding-top: 20px;" id="mywork" data-aos="fade-up"
-                data-aos-anchor-placement="bottom-center" data-aos-duration="0" >ผลงาน</h1>
-            </div>
-       <table align="center">
-        <tr>
-            <td>
-                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-group" style="width: 80%;margin-left: 10%;" >
-                        <div class="card" data-aos="fade-up"
-                        data-aos-duration="1000">
-                          <img src="/img/discord.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Discord Bot</h5>
-                            <p class="card-text" id="discordbot">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 id="textname" style="color: gray;" data-aos="fade-down" class="card-text">Alongkon Chanthiang</h3>
+                        <!-- <p class="card-text" id="aboutmetext" data-aos="fade-down">สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาของวิทยาลัยเทคนัคสัตหีบ อยู่ระดับชั้น ปวส.1 อายุ 19 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ </p><br> -->
+                        <div class="container">
+                          <div class="grid mb-5">
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"  ><span class="font-weight-bold card-text" id="names">Name : </span>  <span id="showname">Alongkon Chanthiang</span></div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"><span class="font-weight-bold card-text" id="Gender">Gender : </span><span id="Genders"> Male</span></div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"><span class="font-weight-bold card-text" id="dob">Date of Birth : </span><span id="dobs">29 March 2005</span> </div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"><span class="font-weight-bold card-text" id="phone">Phone : </span>+66808259260</div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"><span class="font-weight-bold card-text" id="emails" >Email : </span>alongkon2103@gmail.com</div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                              <div >
+                                        <div class="content">
+                                          <div class="col card-text"><span class="font-weight-bold card-text" id="Nationality">Nationality  : </span><span id="Nationalitys">Thai</span> </div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                              
                           </div>
-                        </a>
-                        </div>
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
-                        <div class="card" data-aos="fade-up"
-                        data-aos-duration="1500">
-                          <img src="/img/web.png" class="card-img-top">
-                          <div class="card-body">
-                            <h5 class="card-title">Website It-Uni</h5>
-                            <p class="card-text" id="website">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
-        
-                        </div>
-                    </a>
+                          </div>
+                        <p class="card-text mt-5" id="aboutmetext" data-aos="fade-down">สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาของวิทยาลัยเทคนัคสัตหีบ อยู่ระดับชั้น ปวส.1 อายุ 19 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ </p><br>
+                        <p id="aboutmetext2" data-aos="fade-down">นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ</p>
                       </div>
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                        <div class="card" data-aos="fade-up"
-                        data-aos-duration="2000">
-                          <img src="/img/shop.png" class="card-img-top">
-                          <div class="card-body">
-                            <h5 style="margin-top: 1rem;" class="card-title" id="vending_machine">ระบบตู้กด</h5>
-                            <p class="card-text" id="tugod" style="">เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js ทำเป็นคล้ายๆตู้กดสินค้าที่ต้องสแกนจ่ายเงินก่อน <br></p>
-        
-                        </div>
-                    </a>
-                      </div>
-                      
+                    </div>
+                   
+                  </div>
                 </div>
+          </div>
+          <h1  class="p-5" id="rms" style="text-align: center;margin-top: 5%;" data-aos="fade-down">Resume</h6>
+            <div class="container">
+             
+              <!-- <h3><li>Triamsuksa Soidao</li></h3> -->
+              <div class="container">
+                <div class="grid mb-5">
+                    <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                    <div >
+                              <div class="content">
+                                <h4 id="edc">EDUCATION</h4>
+                                <hr>  
+                                <h3><li id="middles">Middle School</li></h3>
+                                <div class="container" style="margin-left: 4%;">
+                                  <p class="timersm">2560 - 2563</p>
+                                  <p id="scname">Triamsuksa Soidao | GPX 2.93</p>
+                                </div>
+                                <h3><li id="Vocational">Vocational Certificate</li></h3>
+                                <div class="container" style="margin-left: 4%;">
+                                  <p class="timersm">2563 - 2566</p>
+                                  <p id="clname">Thai-Austrian Technical College | GPX 3.33</p>
+                                </div>
+                            
+                              </div>
+                              
+                            </div>
+                        </div>
+                    <div class="content twocontent" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                    <div >
+                              <div class="content">
+                                <h4 id="exp">EXPERIENCE</h4>
+                                <hr>  
+                                <h3><li id="ins">Internship</li></h3>
+                                <div class="container" style="margin-left: 4%;">
+                                  <p id="textep">It support and web deverloper at Sattahip Wittayakhom School</p>
+                                </div>
+                            
+                              </div>
+                              
+                            </div>
+                        </div>
+                    
+                </div>
+                </div
+            </div>
+        <h1  class="p-5"  style="text-align: center;margin-top: 5%;" id="skill" data-aos="fade-down">Skills</h6>
+          <div class="container">
+            <div class="grid mb-5">
+                <div class="content" data-aos="fade-right" data-aos-duration="1000"  v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg w-50" src="https://img.freepik.com/free-icon/html5_318-903450.jpg" alt="">
           
-              
-            </td>
-        </tr>
-       </table>
-           
-    </div>
+                              <h4 class="text-center mt-3">HTML</h4> 
+                          </div>
+                          
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1100" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg" style="width: 45%;" src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png" alt="">
+                            <h4 class="text-center mt-3">CSS</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1200" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg" style="width: 45%;" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="">
+                            <h4 class="text-center mt-3">Java Script</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1300" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg w-50" src="https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png" alt="">
+                            <h4 class="text-center mt-3">Nuxt Js</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1400" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg" style="width: 65%;margin-top: 15%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" alt="">
+                            <h4 class="text-center mt-3">Node js</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1500" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg" style="width: 65%;margin-top: 20%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="">
+                            <h4 class="text-center mt-3">PHP</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1600" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg w-50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="">
+                            <h4 class="text-center mt-3">Python</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+                <div class="content" data-aos="fade-right" data-aos-duration="1700" v-for="products in datas">
+                <div class="item w-100 h-100 rounded-1" style="border: 0.1px solid black;">
+                          <div class="content p-3 " style="height: 90%;">
+                              <img class="priceimg w-50" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="">
+                            <h4 class="text-center mt-3">C</h4>
+                           
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+              <h1 align="center" id="mywork" data-aos="fade-down" style="margin-top: 10%" >Project</h1>
 
-    <div class="contatc" id="contatc">
+     <table align="center">
+      <tr>
+          <td>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="card-group" style="width: 80%;margin-left: 10%;" >
+                      <div class="card" data-aos="fade-up"
+                      data-aos-duration="1000">
+                        <img src="/img/discord.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Discord Bot</h5>
+                          <p class="card-text" id="discordbot">Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว</p>
+                        </div>
+                      </a>
+                      </div>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                      <div class="card" data-aos="fade-up"
+                      data-aos-duration="1500">
+                        <img src="/img/web.png" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title">Website It-Uni</h5>
+                          <p class="card-text" id="website">เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT</p>
+      
+                      </div>
+                  </a>
+                    </div>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      <div class="card" data-aos="fade-up"
+                      data-aos-duration="2000">
+                        <img src="/img/shop.png" class="card-img-top">
+                        <div class="card-body">
+                          <h5 style="margin-top: 1rem;" class="card-title" id="vending_machine">ระบบตู้กด</h5>
+                          <p class="card-text" id="tugod">เว็บนี้เขียนโดย HTML CSS Bootstrap Node.js ทำเป็นคล้ายๆตู้กดสินค้าที่ต้องสแกนจ่ายเงินก่อน <br></p>
+      
+                      </div>
+                  </a>
+                    </div>
+                    
+              </div>
         
+            
+          </td>
+      </tr>
+     </table>
          
+  <h1  class="p-5"  style="text-align: center;margin-top: 10%;" id="ctfc" data-aos="fade-down">Certificate</h1>
+
+  <div class="container certificatecon" data-aos="fade-right"
+  data-aos-duration="1500">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/borntodev-acdemy_Introduction to JavaScript_certifiacte (1).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Certificate for อลงกรณ์ จันทร์เที่ยง for _กิจกรรมการพัฒนาความรู้ด้านย..._-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Certificate Stand Up-1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
+
+
+      </section>
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid">
+
+  <footer class="footers text-center text-white">
+  <div class="container p-4 pb-0">
+
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/alongkon29/" target="_blank" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/__alongkon/"  target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/alongkon2103/" target="_blank" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="alongkonweb.vercel.app">alongkonweb.vercel.app</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+</div>
+<!-- End of .container -->
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -177,7 +413,7 @@
           
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Discord Bot</h1>
@@ -193,7 +429,7 @@
           </div>
 
           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">IT-UNI</h1>
@@ -212,7 +448,7 @@
 
 
           <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" >
-            <div class="modal-dialog" >
+            <div class="modal-dialog modal-lg" >
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="vending_machine2"></h1>
@@ -256,7 +492,7 @@
                 aboutmetext : 'สวัสดีครับผมชื่อ อลงกรณ์ จันทร์เที่ยง หรือ ปูน ตอนนี้เป็นนักศึกษาThai-Austrian Technical College อยู่ระดับชั้น ปวช.3 อายุ 18 ผมมีความชื่นชอบ ทางด้านเขียนโปรแกรม หรือ พัฒนาเว็บไซค์มาก ตอนนี้อาจจะไม่เก่งมากแต่จะพัฒนาต่อไปครับ',
                 aboutmetext2: 'นี่เป็นเว็บ Portfolio เว็บแรกของผมผิดพลาดตรงไหนต้องขอโทษด้วยครับ',
                 skill : 'ความสามารถ',
-                mywork : 'ผลงาน',
+                mywork : 'โปรเจค',
                 discordbotdata : 'บอทตัวนี้ชื่อ Chunibyo-Cat เป็นบอทดิสคอร์ดที่่สร้างด้วยภาษา Python บอทมีระบบ ฟลักข้อความ สร้าง embed สร้างโพลโหวต ดูข้อมูล covid 19 แล้วก็อื่นๆ แต่ตอนนี้ไม่ได้เปิดให้บอทออนไลน์นะ เพราะไม่มีเครรื่องเซิฟให้เปิดตลอดเวลาฮ่าฮ่าฮ่า',
                 discordbot : 'Bot Discord ตัวนี้สร้างขึ้นด้วยภาษา Python มีคำสั่่งต่างๆให้ใช้งาน แต่ตอนนี้หยุดพัฒนาแล้ว',
                 website : 'เว็บไซต์นี้สร้างขึ้นเพื่อนเป็นโปรเจค ปวช ปีที่3 พัฒนาโดยใช้ภาษา HTML CSS PHP โดยเว็บไซต์นี้ใช้ในการดูข้อมูลของมหาลัยต่างๆที่มีสาขาที่เกียวข้องกับแผนก IT',
@@ -267,10 +503,40 @@
                 vending_machinedata: "เว็บนี้ทำเพื่อลองใช้ Node.js เพิ่อสร้าง QR code โดยเว็บนี้จะทำเป็นคล้ายๆตู้กดสินค้า เมื่อ กดซื้อ มันจะสร้าง QR Code promtpay ให้เราสแกนจ่ายเงิน โดยสามารถสแกนจ่ายได้จริง",
                 webdata : 'เว็บนี้เป็นโปรเจคจบ ปี3 เว็บนี้พัฒนาด้วยภาษา PHP HTML CSS SQL เป็นเว็บรวบรวมมาลัยที่จบ ปวช แผนก ไอที แล้วสารมารถไปปต่อ หรือ มีสาขาที่เกียวข้องกับแผนก IT ซึงเว็บได้มีการใช้ PHP Myadmin ไว้เก็บข้อมูลและใช้คำสั่ง SQL ในการดึงข้อมูลและทำระบบค้นหา',
                 visit : "เยี่ยมชม",
+                textname:'อลงกรณ์ จันทร์เที่ยง',
+                showname : 'อลงกรณ์ จันทร์เที่ยง',
+                names : 'ชื่อ : ',
+                Gender: 'เพศ : ',
+                Genders: 'ชาย',
+                dob : 'วันเกิด : ',
+                dobs : '29 มีนาคม 2548',
+                phone : 'หมายเลขโทรศัพ : ',
+                emails : 'อีเมล : ',
+                Nationality : 'สัญชาติ : ',
+                Nationalitys : 'ไทย',
+                middles : 'มัธยมต้น',
+                Vocational : 'ระดับ ปวช.',
+                scname : 'โรงเรียนเตรียมศึกษาสอยดาว เกรดเฉลี่ยนรวม | 2.93',
+                clname : 'วิทยาลัยเทคนิคสัตหีบ เกรดเฉลี่ยรวม | 3.33',
+                edc :'ประวัติการศึกษา',
+                exp : 'ประสบการณ์',
+                ins : 'การฝึกงาน',
+                textep:'ฝึกงานเป็น It support และ web developer ที่โรงเรียนสัตหีบวิทยาคม',
+                rms : 'ประวัติย่อ',
+                ctfc : 'ประกาศนียบัตร'
+
               }
 
 
               var en = {
+                textep : 'It support and web deverloper at Sattahip Wittayakhom School',
+                ins : 'Internship',
+                exp : 'EXPERIENCE',
+                middles : 'Middle School',
+                Vocational : 'Vocational Certificate ',
+                scname : 'Triamsuksa Soidao | GPAX 3.33',
+                clname : 'Thai-Austrian Technical College | GPAX 2.93',
+                edc :'EDUCATION',
                 menu_home: 'Home',
                 menu_about: 'About',
                 btn_language: 'Language : EN',
@@ -279,7 +545,7 @@
                 aboutmetext : "Hello, my name is Alongkorn Chanthiang or Poon. Now I am a student of Thai-Austrian Technical College in Vocational Level 3, age 18. I have a passion. On the programming side or developing a lot of websites Maybe not very good now, but will continue to improve.",
                 aboutmetext2 : 'This is my first Portfolio website. I apologize if there is any mistake.',
                 skill: 'Skill',
-                mywork : 'Work',
+                mywork : 'Project',
                 discordbotdata : 'This bot, named Chunibyo-Cat, is a Discord bot built in Python. The bot has a system for text flux, embed, vote poll, covid 19 data view, etc. But now it is not open to online bots. yes because there is no server to open all the time hahaha',
                 discordbot: "This Discord Bot is built in Python language. There are various commands to use. But now it has stopped developing.",
                 website : 'This website is created for a friend as a 3rd year vocational project developed using HTML CSS PHP language. This website is used to view information of various universities that have branches related to IT departments.',
@@ -289,7 +555,20 @@
                 vending_machine3: "vending machine",
                 vending_machinedata: "This website is made to try using Node.js to create a QR code. This website will act like a vending machine. When you click to buy, it will generate a QR Code promtpay for us to scan to pay. which can actually scan to pay",
                 webdata : 'This website is a 3rd year graduation project. This website is developed with PHP HTML CSS SQL language. It is a website that collects garlands that graduated from IT departments and can continue or have branches related to IT departments. Using PHP Myadmin to store data and use SQL commands to retrieve data and make a search system.',
-                visit : "visit "
+                visit : "visit ",
+                textname:'Alongkon Chanthiang',
+                showname : 'Alongkon Chanthiang',
+                names : 'Name : ',
+                Gender: 'Gender : ',
+                Genders: 'Male',
+                dob : 'Date of Birth : ',
+                dobs : '29 March 2005',
+                phone : 'Phone : ',
+                emails : 'Email : ',
+                Nationality : 'Nationality : ',
+                Nationalitys : 'Thai',
+                rms:'Resume',
+                ctfc : "Certificate"
               }
 
 
@@ -300,6 +579,14 @@
                 localStorage.setItem('lang','th')
 
               }else{
+                $("#names").text(settext("names"));
+                $("#Gender").text(settext("Gender"));
+                $("#dob").text(settext("dob"));
+                $("#dobs").text(settext("dobs"));
+                $("#phone").text(settext("phone"));
+                $("#emails").text(settext("emails"));
+                $("#Nationality").text(settext("Nationality"));
+                $("#Nationalitys").text(settext("Nationalitys"));
                 $("#menu_home").text(settext("menu_home"));
                 $("#menu_about").text(settext("menu_about"));
                 $("#btn_language").text(settext("btn_language"));
@@ -318,8 +605,22 @@
                 $("#vending_machine3").text(settext("vending_machine3"));
                 $("#vending_machinedata").text(settext("vending_machinedata"));
                 $("#webdata").text(settext("webdata"));
+
+                $("#middles").text(settext("middles"));
+                $("#Vocational").text(settext("Vocational"));
+                $("#scname").text(settext("scname"));
+                $("#clname").text(settext("clname"));
+                $("#edc").text(settext("edc"));
+                
                 $("#visit ").text(settext("visit"));
-     
+                $("#textname ").text(settext("textname"));
+                $("#showname ").text(settext("showname"));
+                $("#Genders ").text(settext("Genders"));
+                $("#exp ").text(settext("exp"));
+                $("#ins ").text(settext("ins"));
+                $("#textep ").text(settext("textep"));
+                $("#rms ").text(settext("rms"));
+                $("#ctfc ").text(settext("ctfc"));
               }
                    
 
