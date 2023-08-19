@@ -11436,6 +11436,7 @@ body {
 /* Dark mode styles */
 .dark-mode {
   --background-color: #202020;
+  --background-color2: #352F44;
   --text-color: #ffffff;
 }
 body {
@@ -11445,6 +11446,7 @@ body {
 .card-text{
   color: var(--text-color);
 }
+
 p{
   color: var(--text-color);
 }
@@ -11487,7 +11489,7 @@ margin-right: auto;
 width: 50%;
 }
 .timersm{
-  background-color: #f7f8f9;
+  background-color: var(--background-color2);
   width: fit-content;
   padding: 0.7%;
 }
