@@ -11409,6 +11409,13 @@ body {
 .certificatecon{
   width: 50%;
 }
+.boximageitem{
+  width:26.5%;
+  margin-left: 10%;
+}
+.nav-fuction{
+  margin-left: 50%;
+}
 @media only screen and (max-width: 1000px),(max-width : 600px) {
   .about {
   margin-top: 500px;
@@ -11424,6 +11431,12 @@ body {
   }
   .certificatecon{
     width: 100%;
+  }
+  .boximageitem{
+    width:80%;
+  }
+  .nav-fuction{
+    margin-left: 0;
   }
 
 }
