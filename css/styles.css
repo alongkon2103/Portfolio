@@ -1,4 +1,4 @@
-@charset "UTF-8";
+cccccccccc@charset "UTF-8";
 /*!
 * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
 * Copyright 2013-2022 Start Bootstrap
@@ -11505,4 +11505,8 @@ width: 50%;
   background-color: var(--background-color2);
   width: fit-content;
   padding: 0.7%;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
