@@ -11440,6 +11440,30 @@ body {
   }
 
 }
+@media only screen and (max-width: 1400px),(max-width : 1100px) {
+  .about {
+  margin-top: 500px;
+  }
+  .box{
+    margin-top: 25%;
+  }
+  .work2{
+    margin-top: 25%;
+  }
+  .twocontent{
+    margin-top: 10%;
+  }
+  .certificatecon{
+    width: 100%;
+  }
+  .boximageitem{
+    width:0px;
+  }
+  .nav-fuction{
+    margin-left: 0;
+  }
+
+}
 
 :root {
   --background-color: #ffffff;
