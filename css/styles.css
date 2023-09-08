@@ -11410,12 +11410,18 @@ body {
   width: 50%;
   z-index: 100;
 }
-.boximageitem{
-  width:26.5%;
-  margin-left: 10%;
-}
+
 .nav-fuction{
   margin-left: 50%;
+}
+.boxprohead{
+  margin-left: 10%; width: 26.6%;
+}
+.boxpro{
+  width: 26.6%;
+}
+.tablework{
+  display: flex;
 }
 @media only screen and (max-width: 1000px),(max-width : 600px) {
   .about {
@@ -11433,8 +11439,16 @@ body {
   .certificatecon{
     width: 100%;
   }
-  .boximageitem{
-    width:80%;
+  .boxprohead{
+    width: 80%;
+  }
+  .boxpro{
+    width: 80%;
+    margin-left: 10%;
+   
+  }
+  .tablework{
+    display: block;
   }
   .nav-fuction{
     margin-left: 0;
