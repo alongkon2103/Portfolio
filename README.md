@@ -3,12 +3,12 @@
 Hello, I'm Alongkorn "Poon" Chanthiang, a 19-year-old student currently studying at Satreebivej College, pursuing my Diploma in Information Technology. I have a strong passion for programming and web development, and I'm constantly striving to improve my skills.
 
 ## About Me
-
-- **Name:** Alongkorn "Poon" Chanthiang
+```
+- **Name:** Alongkorn Chanthiang (Poon)
 - **Age:** 19
 - **Education:** Diploma in Information Technology, Thai-Austrian Technical College, Thailand
 - **Year:** 2st year (Diploma level)
-
+```
 ## Interests
 
 I have a keen interest in programming and web development. While I may not be highly skilled at the moment, I'm dedicated to continuous learning and improvement.
