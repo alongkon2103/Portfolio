@@ -174,12 +174,13 @@ div#sea {
 
 .icons {
   position: absolute;
-  left: 10px;
-  /*top:50%;
-  width: 100%;*/
+  top: 0; /* อยู่ที่ด้านบนสุด */
+  left: 50%; /* อยู่ที่กลางแนวนอน */
+  transform: translateX(-50%); /* ปรับตำแหน่งให้ตรงกลาง */
+  width: auto; /* กำหนดความกว้างให้เหมาะสม */
   height: auto;
-  transform: translateY(10px) rotate(-20deg);
 }
+
 .icons .row {
   width: 100%;
   text-align: center;
